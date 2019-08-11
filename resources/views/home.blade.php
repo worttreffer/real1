@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">Profil</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +14,12 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    @if (Auth::user()->address != null)
+                        <p>Address Found! ID: {{Auth::user()->address->id}}</p>
+                    @else
+                      @include('components/users/registration')
+                    @endif
+                    
                 </div>
             </div>
         </div>
