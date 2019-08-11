@@ -14,18 +14,23 @@
   <form method="POST" action="/home/saveProfile">
     @csrf
     <div class="form-group">
-      <label for="first_name">Straße:</label>
+      <label for="street">Straße:</label>
       <input type="text" class="form-control" name="street"/>
     </div>
 
     <div class="form-group">
-      <label for="first_name">Ort:</label>
-      <input type="text" class="form-control" name="place"/>
+      <label for="city">Ort:</label>
+      <input type="text" class="form-control" name="city"/>
     </div>
 
     <div class="form-group">
-      <label for="first_name">Postleitzahl:</label>
+      <label for="postal_code">Postleitzahl:</label>
       <input type="text" class="form-control" name="postal_code"/>
+    </div>
+
+    <div class="form-group">
+      <label for="country">Land:</label>
+      <input type="text" class="form-control" name="country"/>
     </div>
 
     <button type="submit" class="btn btn-primary-outline">Weiter</button>
