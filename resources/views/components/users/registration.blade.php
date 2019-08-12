@@ -24,8 +24,8 @@
     </div>
 
     <div class="form-group">
-      <label for="postal_code">Postleitzahl:</label>
-      <input type="text" class="form-control" name="postal_code"/>
+      <label for="post_code">Postleitzahl:</label>
+      <input type="text" class="form-control" name="post_code"/>
     </div>
 
     <div class="form-group">
@@ -34,5 +34,6 @@
     </div>
 
     <button type="submit" class="btn btn-primary-outline">Weiter</button>
+    <button type="cancel" class="btn btn-primary-outline">Abbrechen</button>
   </form>
 </div>

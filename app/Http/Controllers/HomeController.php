@@ -33,7 +33,7 @@ class HomeController extends Controller
         $request->validate([
             'street'=>'required',
             'city'=>'required',
-            'postal_code'=>'required',
+            'post_code'=>'required',
             'country'=>'required'
         ]);
 
@@ -41,7 +41,7 @@ class HomeController extends Controller
         $user->address()->save([
             'street' => $request->get('street'),
             'city' => $request->get('city'),
-            'postal_code' => $request->get('postal_code'),
+            'post_code' => $request->get('post_code'),
             'country' => $request->get('country'),
         ]);
     }
