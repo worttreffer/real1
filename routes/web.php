@@ -20,3 +20,8 @@ Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('/home/saveProfile', 'HomeController@saveAddress');
+
+
+Route::get('/impressum', function () {
+    return view('static/imprint');
+});
