@@ -146,7 +146,7 @@ return [
         'password'              => 'Kennwort',
         'password_confirmation' => 'Kennwort-Wiederholung',
         'postal_code'           => 'Postleitzahl',
-        'street'                => 'Strasse',
+        'street'                => 'Straße',
         'city'                  => 'Stadt',
         'country'               => 'Land',
         'address'               => 'Adresse',
