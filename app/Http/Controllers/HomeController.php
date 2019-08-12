@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use App\User;
+use App\Address;
 
 class HomeController extends Controller
 {
@@ -33,16 +34,18 @@ class HomeController extends Controller
         $request->validate([
             'street'=>'required',
             'city'=>'required',
-            'postal_code'=>'required',
+            'post_code'=>'required',
             'country'=>'required'
         ]);
 
         $user = Auth::user();
-        $user->address()->save([
+        $user->address()->create([
             'street' => $request->get('street'),
             'city' => $request->get('city'),
-            'postal_code' => $request->get('postal_code'),
+            'post_code' => $request->get('post_code'),
             'country' => $request->get('country'),
         ]);
+
+        return redirect('/home')->with('status', 'Profil vervollständigt!');
     }
 }

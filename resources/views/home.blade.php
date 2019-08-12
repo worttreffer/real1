@@ -15,11 +15,11 @@
                     @endif
 
                     @if (Auth::user()->address != null)
-                        <p>Address Found! ID: {{Auth::user()->address->id}}</p>
+                      @include('components/users/index')
                     @else
                       @include('components/users/registration')
                     @endif
-                    
+
                 </div>
             </div>
         </div>
