@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 namespace App\Notifications;
 
@@ -42,7 +42,7 @@ class users extends Notification
     {
         return (new MailMessage)
                     ->line('Grunddaten der Registrierung wurden angelegt.')
-                    ->action('Bitte die Bisherigen Daten best�tigen', url('/'))
+                    ->action('Bitte die Bisherigen Daten bestätigen', url('/'))
                     ->line('Wenn diese Aktion nicht gewollt ist, unternehmen sie nichts weiteres.');
     }
 
