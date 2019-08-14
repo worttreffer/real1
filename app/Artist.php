@@ -4,7 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Artist extends Model
+class Artists extends Model
 {
+    protected $fillable = [
+        'name', 'description', 'image', 'bookable', 'confirmed',
+    ];
     //
+    
 }
