@@ -5,7 +5,6 @@
     <div class="card">
         <div class="card-header">Impressum</div>
         <div class="card-body">
-Impressum            
 
 Literatur-Entertainment
 Marion Lenden-Boos
