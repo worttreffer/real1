@@ -34,7 +34,5 @@
     </div>
 
     <button type="submit" class="btn btn-primary-outline">Weiter</button>
-    <button type="cancel" class="btn btn-primary-outline">Abbrechen</button>
-    <button type="delete" class="btn btn-primary-outline">Löschen</button>
   </form>
 </div>
